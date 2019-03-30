@@ -1,5 +1,10 @@
 <?php
 
+// Strategy Pattern
+// this design patterns focuses on interchangeable algorithms.
+// minimizes coupling
+// supports the principle of Open/closed principle
+
 echo "hello for strategy patter.<pre>";
 
 class StrategyContext{
