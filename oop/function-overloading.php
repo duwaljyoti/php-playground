@@ -2,6 +2,13 @@
 
 echo "Function overloading.<pre>";
 
+session_start();
+
+var_dump($_SESSION);
+
+
+var_dump('==', $_SESSION);
+
 class TestClass {
 
     public function __call($arg1, $arg2) {

@@ -1,22 +1,33 @@
 <?php
 
-function generateFibonacci() {
+echo "Hello world from PHP.<pre>";
 
-}
+$i = $j = 0;
 
-$testArray = [1, 2, 3, 4, 5];
-
-function testRecursive($limitation) {
-    for($i = 0;$i < $limitation; $i++) {
-        if ($i === 0) {
-            $first = 0;
-        } else if ($i === 1) {
-            $second = 1;
-        }
-    }
+while ($j < 10) {
+    var_dump($j);
+    $j++;
 }
 
 
-var_dump(testRecursive(5));
+do {
+    echo "<br>";
+    var_dump($i);
+    $i++;
+} while ($i < 10);
 
-echo "hello world changed mnore";
+
+session_start();
+
+$_SESSION['test_first'] = 'session first value';
+
+$_SESSION['second_value'] = 'session second value';
+$_SESSION['test_first'] = 'session first changed value';
+
+
+// session_unset(); 
+
+// // destroy the session 
+// session_destroy();
+
+var_dump($_SESSION);
